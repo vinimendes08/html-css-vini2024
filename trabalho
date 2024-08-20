@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Página Responsiva</h1>
+    </header>
+    <main>
+        <section class="content">
+            <div class="column">
+                <h2>Coluna 1</h2>
+                <p>Este é o conteúdo da primeira coluna. Ele se ajusta conforme o tamanho da tela.</p>
+            </div>
+            <div class="column">
+                <h2>Coluna 2</h2>
+                <p>Este é o conteúdo da segunda coluna. Em telas menores, as colunas serão empilhadas.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minha Empresa</p>
+    </footer>
+</body>
+</html>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Estilos do header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Estilos do main */
+main {
+    padding: 1rem;
+}
+
+/* Estilos da seção de conteúdo */
+.content {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Estilos das colunas */
+.column {
+    flex: 1;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+}
